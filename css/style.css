@@ -817,11 +817,16 @@ body {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%;
       text-align: center; }
-      .contacts__column:not(:first-child) {
+      .contacts__column:not(:last-child) {
         margin-top: 25px; } }
     @media (max-width: 37.5em) and (max-width: 1160px) {
-      .contacts__column:not(:first-child) {
+      .contacts__column:not(:last-child) {
         margin-top: calc(20px + 5 * ((100vw - 320px) / 840)); } }
+  @media (max-width: 37.5em) {
+      .contacts__column:first-child {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; } }
 
 .footer {
   position: relative;

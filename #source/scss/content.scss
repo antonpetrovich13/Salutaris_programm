@@ -204,8 +204,12 @@
 			flex: 0 0 100%;
 			text-align: center;
 
-			&:not(:first-child) {
+			&:not(:last-child) {
 				@include adaptiv-value('margin-top', 25, 20, 1);
+			}
+
+			&:first-child {
+				order: 2;
 			}
 		}
 	}

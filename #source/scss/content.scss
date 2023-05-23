@@ -156,6 +156,13 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
+		opacity: 0;
+		transition: all 2s ease 2s;
+
+		&._animation {
+			opacity: 1;
+		}
 	}
 
 	&__point {

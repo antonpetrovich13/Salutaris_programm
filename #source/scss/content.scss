@@ -204,6 +204,13 @@
 	&__column {
 		flex: 0 0 50%;
 		text-align: center;
+
+		opacity: 0;
+		transition: all 2s ease 2.1s;
+
+		&._animation {
+			opacity: 1;
+		}
 	}
 
 	&__title {
@@ -265,6 +272,7 @@
 
 			&:first-child {
 				order: 2;
+				transition: all 2s ease 2.6s;
 			}
 		}
 	}

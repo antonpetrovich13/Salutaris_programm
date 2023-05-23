@@ -6,9 +6,9 @@ arrayOfCompositions.forEach((el, index) => {
 
 //АНИМАЦИЯ ПРИ СКРОЛЛЕ
 
-document.addEventListener("DOMContentLoaded", animationOnScroll);
+// document.addEventListener("DOMContentLoaded", animationOnScroll);
 
-function animationOnScroll() {
+window.onload = function () {
 	const animItems = document.querySelectorAll('._anim-items');
 
 	if (animItems.length > 0) {
@@ -46,4 +46,8 @@ function animationOnScroll() {
 		}, 300);
 	}
 }
+
+// function animationOnScroll() {
+
+// }
 

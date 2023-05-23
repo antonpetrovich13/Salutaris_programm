@@ -24,6 +24,15 @@
 		justify-content: space-between;
 	}
 
+	&__header {
+		opacity: 0;
+		transition: all 4s ease 0.4s;
+
+		&._animation {
+			opacity: 1;
+		}
+	}
+
 
 	&__title {
 		@include adaptiv-value('font-size', 40, 22, 1);
@@ -40,7 +49,14 @@
 		@include adaptiv-value('line-height', 35, 20, 1);
 	}
 
+	&__footer {
+		opacity: 0;
+		transition: all 3s ease 2s;
 
+		&._animation {
+			opacity: 1;
+		}
+	}
 
 	&__post {
 		@include adaptiv-value('font-size', 22, 16, 1);
@@ -58,6 +74,13 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+
+	opacity: 0;
+	transition: all 3s ease 1.3s;
+
+	&._animation {
+		opacity: 1;
+	}
 
 	&__label {
 		text-transform: uppercase;
@@ -80,6 +103,15 @@
 		@include adaptiv-value('height', 2, 1.5, 1);
 		height: 2px;
 		background-color: #fff;
+
+		opacity: 0;
+		transition: all 2s ease 3.1s;
+		transform: translate(-50%, 0);
+
+		&._animation {
+			opacity: 1;
+			transform: translate(0, 0);
+		}
 	}
 
 	&__center {
@@ -88,12 +120,28 @@
 		background-color: #fff;
 		border-radius: 50%;
 		margin: 0px 10px 0px 10px;
+
+		opacity: 0;
+		transition: all 2s ease 2.7s;
+
+		&._animation {
+			opacity: 1;
+		}
 	}
 
 	&__right {
 		@include adaptiv-value('width', 60, 37, 1);
 		@include adaptiv-value('height', 2, 1.5, 1);
 		background-color: #fff;
+
+		opacity: 0;
+		transition: all 2s ease 3.1s;
+		transform: translate(50%, 0);
+
+		&._animation {
+			opacity: 1;
+			transform: translate(0, 0);
+		}
 	}
 }
 

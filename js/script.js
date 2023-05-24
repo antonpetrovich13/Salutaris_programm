@@ -5,9 +5,6 @@ arrayOfCompositions.forEach((el, index) => {
 })
 
 //АНИМАЦИЯ ПРИ СКРОЛЛЕ
-
-// document.addEventListener("DOMContentLoaded", animationOnScroll);
-
 window.onload = function () {
 	const animItems = document.querySelectorAll('._anim-items');
 
@@ -47,7 +44,4 @@ window.onload = function () {
 	}
 }
 
-// function animationOnScroll() {
-
-// }
 

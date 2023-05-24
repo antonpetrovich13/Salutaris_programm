@@ -924,10 +924,7 @@ body {
       .contacts__column:first-child {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-        order: 2;
-        -webkit-transition: all 2s ease 2.6s;
-        -o-transition: all 2s ease 2.6s;
-        transition: all 2s ease 2.6s; } }
+        order: 2; } }
 
 .footer {
   position: relative;
